@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+body{ 
+  background-color:rgb(248, 220, 220);
+  font-family:Verdana,Arial,Helvetica; 
+  font-size:12px; 
+  text-align:justify;
+}
+
+#topo{ 
+  background-image:url(../img/topo3.jpg);
+  height:350px;
+}
+#cssmenu{ 
+  background-color:white;
+  height:45px; 
+  margin:0; 
+  padding:0;
+  text-align:center;
+}
+
+#conteudo{ 
+  margin:0;
+  background-color: rgb(255, 255, 255);
+  width:100%; 
+  height:650px; 
+  overflow:auto; /*colocar barra de rolagem*/
+}
+#rodape{
+	background-color:#AE599C;
+	color:white;
+	width:100%;
+	height:40px;
+	margin:0; 
+    padding:0;
+    text-align:center;
+	font-weight:bold;
+}
+#f1{
+	width:280px;
+}
+#figura1{
+	width:300px;
+	float:left;
+	padding:8px;
+}
+
+h2{
+	text-align:center;
+	text-shadow:2px 2px 2px silver;
+	color:#AE599C;
+	margin-top:20px;
+}
+.textos{
+	margin:20px;
+	font-family:arial;
+	font-size:14px;
+	color:black;
+	text-indent:20px;
+	line-height:30px;
+	font-style:italic;
+}
+
+/*FORMATANDO FORMUL�RIO*/
+#leg1{
+	font-weight:bold;
+	font-size:18pt;
+	color:rgb(224, 119, 172);
+	text-shadow:2px 1px 1px black;
+}
+#maior{
+	width:80%;/*largura*/
+	margin:0 auto; /*centraliza formul�rio*/
+	border-radius:15px; /*borda arredondada*/
+	background-color:white; /*cor de fundo*/
+	box-shadow:2px 2px 2px gray; /*sombra na caixa*/
+}
+.menor{
+	border-radius:10px;
+}
+input,select,textarea{
+	border-radius:4px;
+	padding:5px;
+	margin:5px;
+}
+label{
+	font-weight:bold;
+}
+/*focus - quando clica no item
+hover - sobre o item*/
+input:focus, select:focus, textarea:focus{
+	background-color:#EEE9E9;
+}
+input:hover, select:hover, textarea:hover{
+	border:1px solid silver;
+	box-shadow:1px 1px 2px silver;
+}
+
+
+/*PAGINA HISTORIA*/
+#fig{
+	float:right;
+}
+
+/*galeria*/
+table{
+	margin: 0 auto;
+	background-color:white;
+}
+
+
+/*FORMATANDO MENU*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#cssmenu {
+  background: #AE599C;
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #333333;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}
